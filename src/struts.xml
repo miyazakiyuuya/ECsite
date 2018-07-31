@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTO Struts Configuration 2.3//EN"
+"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+	<constant name="struts.devMode" value="true" />
+
+	<package name="com.internousdev.ecsite3.action"
+		extends="struts-default">
+
+		<!--GoHomeAction -->
+		<action name="GoHomeAction"
+			class="com.internousdev.ecsite3.action.SuccessAction"
+			method="execute">
+			<result name="success">home.jsp</result>
+		</action>
+
+		<!--GoLoginAction -->
+		<action name="GoLoginAction"
+			class="com.internousdev.ecsite3.action.SuccessAction"
+			method="execute">
+			<result name="success">login.jsp</result>
+		</action>
+
+		<!--LoginAction -->
+		<action name="LoginAction"
+			class="com.internousdev.ecsite3.action.LoginAction" method="execute">
+			<result name="master">master.jsp</result>
+			<result name="success">goItemList.jsp</result>
+			<result name="error">error.jsp</result>
+		</action>
+
+		<!--GoRegisterUserAction -->
+		<action name="GoRegisterUserAction"
+			class="com.internousdev.ecsite3.action.SuccessAction"
+			method="execute">
+			<result name="success">registerUser.jsp</result>
+		</action>
+
+		<!--RegisterUserAction -->
+		<action name="RegisterUserAction"
+			class="com.internousdev.ecsite3.action.RegisterUserAction"
+			method="execute">
+			<result name="success">success.jsp</result>
+			<result name="error">error.jsp</result>
+		</action>
+
+		<!--GoChangePasswordAction -->
+		<action name="GoChangePasswordAction"
+			class="com.internousdev.ecsite3.action.SuccessAction"
+			method="execute">
+			<result name="success">changePassword.jsp</result>
+		</action>
+
+		<!--ChangePasswordAction -->
+		<action name="ChangePasswordAction"
+			class="com.internousdev.ecsite3.action.ChangePasswordAction"
+			method="execute">
+			<result name="success">success.jsp</result>
+			<result name="error">error.jsp</result>
+		</action>
+
+		<!--ItemListAction -->
+		<action name="ItemListAction"
+			class="com.internousdev.ecsite3.action.ItemListAction" method="execute">
+			<result name="success">itemList.jsp</result>
+		</action>
+
+		<!--ItemDetailedAction -->
+		<action name="ItemDetailedAction"
+			class="com.internousdev.ecsite3.action.ItemDetailedAction" method="execute">
+			<result name="success">itemDetailed.jsp</result>
+		</action>
+
+		<!--AddCartAction -->
+		<action name="AddCartAction"
+			class="com.internousdev.ecsite3.action.AddCartAction" method="execute">
+			<result name="success">addCart.jsp</result>
+		</action>
+
+
+		<!--CartAction -->
+		<action name="CartAction"
+			class="com.internousdev.ecsite3.action.CartAction" method="execute">
+			<result name="success">cart.jsp</result>
+		</action>
+
+		<!--CompleteCartAction -->
+		<action name="CompleteCartAction"
+			class="com.internousdev.ecsite3.action.CompleteCartAction" method="execute">
+			<result name="success">completeCart.jsp</result>
+		</action>
+
+		<action name="calculateAction"
+			class="com.internousdev.ecsite3.action.calculateAction" method="execute">
+			<result name="success">result.jsp</result>
+		</action>
+
+		<action name="ifAction"
+			class="com.internousdev.ecsite3.action.ifAction" method="execute">
+			<result name="success">overAge.jsp</result>
+			<result name ="error">lessage.jsp</result>
+		</action>
+
+		<action name="kukuAction"
+			class="com.internousdev.ecsite3.action.kukuAction" method="execute">
+			<result name="success">kukuResult.jsp</result>
+		</action>
+
+		<action name="FizzBuzz"
+			class="com.internousdev.ecsite3.action.FizzBuzz" method="execute">
+			<result name="success">FizzBuzz.jsp</result>
+		</action>
+
+		<action name="primeAction"
+			class="com.internousdev.ecsite3.action.primeAction" method="execute">
+			<result name="success">prime.jsp</result>
+		</action>
+
+		<action name="LogoutAction"
+			class="com.internousdev.ecsite3.action.LogoutAction" method="execute">
+			<result name="success">logout.jsp</result>
+		</action>
+
+		<action name="DeleteCartAction"
+			class="com.internousdev.ecsite3.action.DeleteCartAction" method="execute">
+			<result name="success">deleteCart.jsp</result>
+		</action>
+
+		<action name="ProductPageAction"
+			class="com.internousdev.ecsite3.action.ProductPageAction" method="execute">
+			<result name="success">itemList.jsp</result>
+			<result name ="login">login.jsp</result>
+		</action>
+
+		<action name="BuyHistoryAction"
+			class="com.internousdev.ecsite3.action.BuyHistoryAction" method="execute">
+			<result name="success">buyHistory.jsp</result>
+		</action>
+
+		<action name="DeleteBuyHistoryAction"
+			class="com.internousdev.ecsite3.action.DeleteBuyHistoryAction" method="execute">
+			<result name="success">deleteBuyHistory.jsp</result>
+		</action>
+
+		<action name="MyPageAction"
+			class="com.internousdev.ecsite3.action.MyPageAction" method="execute">
+			<result name="success">myPage.jsp</result>
+			<!-- <result name ="error">login.jsp</result> -->
+		</action>
+
+
+
+
+
+
+
+
+
+
+	</package>
+</struts>
